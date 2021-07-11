@@ -597,8 +597,8 @@ img {
     transform: translate(0%);
   }
   .home__img {
-    width: 300px;
-    bottom: 2%;
+    width: 400px;
+    bottom: 30%;
   }
   .about__container {
     /*-ms-grid-columns: (1fr)[2];*/
@@ -613,7 +613,7 @@ img {
   }
   .section-title {
 
-    font-size: 0.5rem;
+    font-size: 2rem;
   }
   .skills__container {
     /*-ms-grid-columns:(1fr)[2];*/
@@ -690,6 +690,10 @@ img {
   }
   .about__container {
     font-size: 0.8rem;
+  }
+  .section-title {
+
+    font-size: 1rem;
   }
   .about__subtitle {
     margin-bottom: var(--mb-1);

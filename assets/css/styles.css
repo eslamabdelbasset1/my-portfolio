@@ -276,8 +276,6 @@ img {
 
 .home__img .portofolio-image img {
   width: 100%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 /* ===== ABOUT =====*/
@@ -599,8 +597,8 @@ img {
     transform: translate(0%);
   }
   .home__img {
-    width: 500px;
-    bottom: 20%;
+    width: 300px;
+    bottom: 2%;
   }
   .about__container {
     /*-ms-grid-columns: (1fr)[2];*/

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>My Portfolio</title>
+    <link rel="icon" href="assets/img/logo.png">
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__logo">
+                <a href="#">Islam</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i> <!--☰-->
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Islam,</span><br> A front-end developer | Angular</h1>
+
+                <a href="#" class="button" onclick="downloadFile()">Download CV&ensp;<i class="fas fa-download"></i></a>
+            </div>
+            <div class="home__img">
+                <div class="portofolio-image">
+                    <img src="assets/img/portfolio.jpg" alt="portfolio">
+                </div>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about-image">
+                    <img class="img-thumbnail" src="assets/img/profile.jpg" alt="">
+                    <div class="icons-social">
+                        <div class="icons-social-inner">
+                            <a href="https://github.com/eslamabdelbasset1"><i class="fab fa-github"></i></a>
+                            <a href="www.linkedin.com/in/eslamabdelbasset/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://api.whatsapp.com/send/?phone=201060838210"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100009242350772"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="about__subtitle">I'm Islam Abdelbasset</h2>
+                    <p class="about__text">Seeking Employment in the Capacity of a Front-End Developer Position in a Company with a Good
+                        Reputation that will Add to my Knowledge, Experience and Skills on a day-by-day Basis, to Put
+                        Experience Effort and Abundant Creativity into Building Notable Websites for clients.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                   
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 skills__icon'></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 skills__icon'></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JavaScript</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fab fa-angular  bxl-javascript skills__icon fa-2x"></i>
+
+
+                            <span class="skills__name"> Angular Framework</span>
+                        </div>
+                        <div class="skills__bar skills__ux">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/work1.png" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <h3 class="text-center my-3">Movies Site</h3>
+                    <a href="https://github.com/eslamabdelbasset1/movies-app-angular" target="_blank"><img src="assets/img/work1.png"></a>
+                </div>
+                <div class="work__img">
+                    <h3 class="text-center my-3">Weather App</h3>
+                    <a href="https://eslamabdelbasset1.github.io/Weather-api/" target="_blank"><img
+                            src="assets/img/work2.png"></a>
+                </div>
+                <div class="work__img">
+                    <h3 class="text-center my-3">Bookmarker</h3>
+                    <a href="https://eslamabdelbasset1.github.io/Bookmarker/" target="_blank"><img
+                            src="assets/img/work3.png"></a>
+                </div>
+                <div class="work__img">
+                    <h3 class="text-center my-3">CRUD System</h3>
+                    <a href="https://eslamabdelbasset1.github.io/Bookmarker/" target="_blank"><img
+                            src="assets/img/work10.png"></a>
+                </div>
+
+                <div class="work__img">
+                    <h3 class="text-center my-3">Smart Login</h3>
+                    <a href="https://eslamabdelbasset1.github.io/smart-login-system/" target="_blank"><img
+                            src="assets/img/work4.png"></a>
+                </div>
+                <div class="work__img">
+                    <h3 class="text-center my-3">Branding Site 1</h3>
+                    <a href="https://eslamabdelbasset1.github.io/Angora/" target="_blank"><img
+                            src="assets/img/work5.png"></a>
+                </div>
+                <div class="work__img">
+                    <h3 class="text-center my-3">Branding Site 2</h3>
+                    <a href="https://eslamabdelbasset1.github.io/Devfolio/" target="_blank"><img src="assets/img/work6.png"></a>
+                </div>
+                <div class="work__img">
+                    <h3 class="text-center my-3">Calculator Age</i></h3>
+                    <a href="https://eslamabdelbasset1.github.io/Age_calculator_js/" target="_blank"><img src="assets/img/work7.png"></a>
+                </div>
+                <div class="work__img">
+                    <h3 class="text-center my-3">Egyptian Party</h3>
+                    <a href="https://eslamabdelbasset1.github.io/Egyptian-Party/" target="_blank"><img src="assets/img/work8.png"></a>
+                </div>
+                <div class="work__img">
+                    <h3 class="text-center my-3">Engage Bakery</h3>
+                    <a href="https://eslamabdelbasset1.github.io/Engage-Bakery/" target="_blank"><img src="assets/img/work9.png"></a>
+                </div>
+            </div>
+        </section>
+
+  
+    </main>
+    
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Islam Abdelbasset</p>
+        <div class="footer__social">
+            <a href="www.linkedin.com/in/eslamabdelbasset/"  target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/eslamabdelbasset1"  target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100009242350772"  target="_blank" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/eslamabdelbasset1/"  target="_blank" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=201060838210"  target="_blank" class="footer__icon"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+        <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== External Files =====-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

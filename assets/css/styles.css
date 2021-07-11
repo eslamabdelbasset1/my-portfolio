@@ -598,7 +598,8 @@ img {
   }
   .home__img {
     width: 400px;
-    bottom: 30%;
+    top: 30%;
+    bottom: 0%;
   }
   .about__container {
     /*-ms-grid-columns: (1fr)[2];*/
@@ -674,9 +675,9 @@ img {
 
   .home__img {
     position: absolute;
-    right: 20%;
-    bottom: 14%;
-    width: 13rem;
+    right: 21%;
+    bottom: 11%;
+    width: 14rem;
   }
 
   /*BUTTONS*/

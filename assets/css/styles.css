@@ -592,7 +592,7 @@ img {
     top: 30%;
     left: 15%;
     -webkit-transform: translate(0%);
-            transform: translate(0%);
+    transform: translate(0%);
   }
   .home__img {
     width: 500px;

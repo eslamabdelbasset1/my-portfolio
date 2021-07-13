@@ -62,7 +62,7 @@ sr.reveal('.contact__input',{interval: 200});
 function downloadFile()
 {
     let link = document.createElement("a");
-    link.download = "FrontEnd_Angular";
+    link.download = "FrontEnd_Angular_Developer";
     link.href = "assets/Cv/CV.pdf";
     link.click();
 }

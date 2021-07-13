@@ -63,6 +63,6 @@ function downloadFile()
 {
     let link = document.createElement("a");
     link.download = "Angular_Developer2021";
-    link.href = "assets/Cv/cv.pdf";
+    link.href = "assets/Cv/CV.pdf";
     link.click();
 }

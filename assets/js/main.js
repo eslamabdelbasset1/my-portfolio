@@ -56,9 +56,6 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-
-
-
 function downloadFile()
 {
     let link = document.createElement("a");
@@ -66,17 +63,12 @@ function downloadFile()
     link.href = "assets/Cv/CV.pdf";
     link.click();
 }
-
 /*============= Dark mode =================*/
 let icon = document.getElementById("icon");
 icon.onclick = function () {
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme"))
-    {
-        icon.src = "assets/img/sun.png";
-    }else
-    {
-        icon.src = "assets/img/moon.png";
-    }
-
+    { icon.src = "assets/img/sun.png"; }
+    else
+    { icon.src = "assets/img/moon.png"; }
 }

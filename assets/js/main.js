@@ -66,3 +66,17 @@ function downloadFile()
     link.href = "assets/Cv/CV.pdf";
     link.click();
 }
+
+/*============= Dark mode =================*/
+let icon = document.getElementById("icon");
+icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme"))
+    {
+        icon.src = "assets/img/sun.png";
+    }else
+    {
+        icon.src = "assets/img/moon.png";
+    }
+
+}

@@ -9,7 +9,6 @@
 /*===== Colores =====*/
 :root {
   --first-color: #4070F4;
-  --second-color: #0E2431;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -46,6 +45,24 @@
   --z-fixed: 100;
 }
 
+/*========== Defaults Mode =========*/
+:root
+{
+  --primaryColor: #edf2fc;
+  --secondaryColor: #212121;
+  --footerBackground: #d8dee1;
+  --navHoverColor: #7f878f;
+  transition: all 0.5s;
+}
+/*========== Dark Mode =========*/
+.dark-theme
+{
+  --primaryColor: #000106;
+  --secondaryColor: #fff;
+  --footerBackground: #1c1c1c;
+  --navHoverColor: #7f878f;
+  transition: all 0.5s;
+}
 /*===== BASE =====*/
 *, ::before, ::after {
   -webkit-box-sizing: border-box;
@@ -60,7 +77,8 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
 }
 
 h1, h2, p {
@@ -129,7 +147,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--primaryColor);
   -webkit-box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
           box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
@@ -148,6 +166,11 @@ img {
           align-items: center;
   font-weight: var(--font-semi);
 }
+.nav #icon
+{
+  width: 25px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .nav {
@@ -164,7 +187,7 @@ img {
     width: 70%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: var(--footerBackground);
     -webkit-transition: .5s;
     transition: .5s;
   }
@@ -176,13 +199,13 @@ img {
 
 .nav__link {
   position: relative;
-  color: #fff;
+  color: var(--secondaryColor);
 }
 
 .nav__link:hover {
   position: relative;
   text-decoration: none;
-  color: #000;
+  color: var(--navHoverColor);
 }
 
 .nav__link:hover::after {
@@ -197,11 +220,11 @@ img {
 
 .nav__logo a {
   text-decoration: none;
-  color: #000;
+  color: var(--secondaryColor);
 }
 
 .nav__toggle {
-  color: var(--second-color);
+  color: var(--secondaryColor);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -254,7 +277,7 @@ img {
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  color: #fff;
+  color: var(--primaryColor);
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
@@ -264,12 +287,12 @@ img {
   -webkit-box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
   text-decoration: none;
-  color: #000;
+  color: var(--secondaryColor);
 }
 
 .home__img .portofolio-image {
   position: relative;
-  background-color: #fff;
+  background-color: var(--primaryColor);
   border-radius: 3px;
   overflow: hidden;
 }
@@ -299,7 +322,7 @@ img {
 }
 
 .about__container .about-image {
-  background-color: #fff;
+  background-color: var(--primaryColor);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 70%;
@@ -307,7 +330,7 @@ img {
 
 .about__container .about-image {
   position: relative;
-  background-color: #fff;
+  background-color: var(--primaryColor);
   border-radius: 3px;
   overflow: hidden;
 }
@@ -368,7 +391,7 @@ img {
   font-size: 20px;
   line-height: 20px;
   margin: 0 12px;
-  color: #fff;
+  color: var(--primaryColor);
   margin: 25px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -489,7 +512,7 @@ img {
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid var(--secondaryColor);
   outline: none;
   margin-bottom: var(--mb-4);
 }
@@ -505,8 +528,8 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
-  color: #fff;
+  background-color: var(--footerBackground);
+  color: var(--secondaryColor);
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -523,7 +546,7 @@ img {
 
 .footer__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--secondaryColor);
   margin: 0 var(--mb-2);
 }
 
@@ -563,7 +586,7 @@ img {
   }
   .nav__logoa {
     text-decoration: none;
-    color: #000;
+    color: var(--secondaryColor);
   }
   .nav__logoa:hover {
     color: #4070F4;
@@ -582,7 +605,7 @@ img {
     display: none;
   }
   .nav__link {
-    color: var(--second-color);
+    color: var(--secondaryColor);
   }
   .home {
     height: 100vh;

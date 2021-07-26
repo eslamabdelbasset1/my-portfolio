@@ -60,7 +60,7 @@ function downloadFile()
 {
     let link = document.createElement("a");
     link.download = "islamAbdelbasset-Resume";
-    link.href = "assets/Cv/CV.pdf";
+    link.href = "assets/Cv/islamAbdelbasset-Resume.pdf";
     link.click();
 }
 /*============= Dark mode =================*/
